@@ -5,6 +5,6 @@ monmee's configuration of the shells
 
 ```
 git clone git@github.com:monmee/dotfiles.git
-cd dotfile
+cd dotfiles
 ./install.sh
 ```
