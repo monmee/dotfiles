@@ -11,6 +11,6 @@ do
         continue 
     fi
 
-    ln -s $HOME/dotfiles/$f $HOME/$f
+    ln -s $PWD/$f $HOME/$f
     echo "[Setup]: Symbolic linked $f ..."
 done
