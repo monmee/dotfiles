@@ -2,3 +2,5 @@
 [user]
 	name = monmee
 	email = jazzmonmee@gmail.com
+[core]
+	excludesfile = /Users/yutonishikawa/.gitignore_global
