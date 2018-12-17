@@ -3,4 +3,6 @@
 	name = monmee
 	email = jazzmonmee@gmail.com
 [core]
-	excludesfile = /Users/yutonishikawa/.gitignore_global
+	excludesfile = ~/.gitignore_global
+[ghq]
+	root = ~/go/src
