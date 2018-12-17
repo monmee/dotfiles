@@ -6,7 +6,7 @@ do
     [[ "$f" == ".gitignore" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
     
-    if [[ -e $HOME/$f ]]; then
+    if [[ -h $HOME/$f ]]; then
         echo "[Skip]: $HOME/$f has already exists."
         continue 
     fi

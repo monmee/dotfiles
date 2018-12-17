@@ -3,9 +3,10 @@
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
+    [[ "$f" == ".gitignore" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
     
-    if [[ -e $HOME/$f ]]; then
+    if [[ -h $HOME/$f ]]; then
         echo "[Restore]: Restoring Symolic link $f..."
         unlink $HOME/$f
         continue
