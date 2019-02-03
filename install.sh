@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# brew install
+echo "=== Installing brewfile... ==="
+sh env/install.sh
+echo "=== Done ==="
+
+# Symbolic dotfiles to $HOME
+echo "=== Symbolic-linking dotfiles... ==="
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
@@ -14,3 +21,4 @@ do
     ln -s $PWD/$f $HOME/$f
     echo "[Setup]: Symbolic linked $f ..."
 done
+echo "=== Done ==="
